@@ -1,0 +1,44 @@
+<head>
+  <title>email</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  <div class="container">
+    {{> loginButtons}}
+  {{> email}}
+  </div>
+  
+</body>
+
+<template name='email'>
+  <div name="container">
+    <form role="form" id="email-form" >
+        <h2>Send Mail</h2>
+      <div class="from-group">
+          <label for="input-email">Email Address</label>
+          <input type="text" id="input-email" class="form-control" placeholder="Email"/> <br/>
+          
+      </div>
+      <div class="from-group">
+          <label for="input-subject">Subject</label>
+          <input type="text" id="input-subject" class="form-control" placeholder="Subject"/> <br/>
+          
+        </div>
+        <div class="from-group">
+            <label for="input-message">Message</label>
+            <input type="text" id="input-message" class="form-control" placeholder="message"/> <br/>
+         
+          </div>
+    </form>
+    <button class="btn btn-primary" type="submit">Send Mail</button>
+  </div>
+</template>
+  
+   
+   
+    
+    
+   
+    
+ 
